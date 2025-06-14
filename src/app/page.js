@@ -1,103 +1,168 @@
+import Header from "@/components/Header";
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+export default function LandingPage() {
+    return (
+        <div className="light-theme min-h-screen flex flex-col">
+            <Header />
+            <main className="flex-1 flex flex-col items-center justify-center">
+                <div className="flex gap-36 mx-12 justify-center items-center">
+                    <div className="max-w-xl">
+                        <div className="text-7xl text-secondary mb-4 leading-24">
+                            <span className="font-semibold whitespace-nowrap">
+                                빠른 수금과,
+                            </span>{" "}
+                            <span className="whitespace-nowrap">
+                                스마트한 자금 관리
+                            </span>
+                        </div>
+                        <div className="text-gray-600">
+                            간편한 인보이스, 강력한 연동, 현금흐름 관리 도구로
+                            소상공인을 지원합니다
+                        </div>
+                        <div className="relative mt-8 max-w-md w-full">
+                            <input
+                                type="email"
+                                placeholder="비즈니스 이메일을 입력하세요"
+                                className="border border-gray-300 rounded-lg p-4 w-full pr-28 text-sm"
+                            />
+                            <button
+                                className="absolute top-0 right-0 bg-primary text-white text-sm font-bold rounded-lg px-4 py-2 hover:bg-secondary z-10"
+                                style={{ height: "calc(100%)" }}
+                            >
+                                시작하기
+                                <Image
+                                    src={"/images/arrow.png"}
+                                    alt="arrow"
+                                    width={24}
+                                    height={24}
+                                    className="inline-block ml-2"
+                                />
+                            </button>
+                        </div>
+                        <div className="mt-8 flex gap-8">
+                            <Image
+                                src={"/images/Klarna.svg"}
+                                alt="Klarna"
+                                width={150}
+                                height={120}
+                                className=""
+                            ></Image>
+                            <Image
+                                src={"/images/coinbase.svg"}
+                                alt="coinbase"
+                                width={180}
+                                height={120}
+                            ></Image>
+                            <Image
+                                src={"/images/instacart.svg"}
+                                alt="instacart"
+                                width={160}
+                                height={120}
+                            ></Image>
+                        </div>
+                    </div>
+                    <div className="relative">
+                        <div className="bg-white w-96 rounded-3xl shadow-2xl">
+                            <div className="p-8">
+                                <div className="flex gap-4 items-center">
+                                    <Image
+                                        src={"/images/dipa.png"}
+                                        alt="dipa-logo"
+                                        width={60}
+                                        height={60}
+                                        className="rounded-xl"
+                                    />
+                                    <div className="gap-1 flex flex-col">
+                                        <div className="font-bold">
+                                            Dipa Inhouse
+                                        </div>
+                                        <div className="text-gray-500 text-sm">
+                                            dipainhouse@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="border border-gray-300 rounded-2xl p-4 mb-2 mt-8">
+                                    <div className="text-gray-500 text-sm mb-1">
+                                        청구서
+                                    </div>
+                                    <div className="font-bold text-2xl text-secondary">
+                                        ₩ 1,876,580
+                                    </div>
+                                    <div className="text-gray-500">
+                                        2025-04-21
+                                    </div>
+                                </div>
+                                <div className="border-2 border-primary rounded-2xl p-4 my-2 flex items-center justify-between">
+                                    <div className="flex items-center text-secondary">
+                                        <Image
+                                            src={"/images/credit-card.png"}
+                                            alt="card"
+                                            width={24}
+                                            height={24}
+                                            className="mr-4"
+                                        />
+                                        신용카드
+                                    </div>
+                                    <input
+                                        type="radio"
+                                        name="payment"
+                                        value="card"
+                                        className="w-5 h-5 accent-primary"
+                                        defaultChecked
+                                    />
+                                </div>
+                                <div className="border border-gray-300 rounded-2xl p-4 mt-2 mb-4 flex items-center justify-between">
+                                    <div className="flex items-center text-secondary">
+                                        <Image
+                                            src={"/images/bank.png"}
+                                            alt="bank"
+                                            width={24}
+                                            height={24}
+                                            className="mr-4"
+                                        />
+                                        은행 계좌
+                                    </div>
+                                    <input
+                                        type="radio"
+                                        name="payment"
+                                        value="bank"
+                                        className="w-5 h-5 accent-primary"
+                                        disabled
+                                    />
+                                </div>
+                                <div className="bg-secondary hover:bg-primary text-white font-bold text-center rounded-2xl p-4 my-2 cursor-pointer">
+                                    결제하기
+                                </div>
+                            </div>
+                        </div>
+                        <div className="absolute -top-16 -right-20 bg-primary w-54 h-80 rounded-3xl flex flex-col shadow-2xl">
+                            <div className="p-8">
+                                <div className="text-gray-200 text-sm">
+                                    신용카드
+                                </div>
+                                <div className="text-white font-bold text-xl">
+                                    2344 **** ****
+                                </div>
+                            </div>
+                            <div className="bg-secondary flex justify-between items-center px-8 py-2 mt-auto rounded-b-3xl">
+                                <Image
+                                    src={"/images/visa.svg"}
+                                    alt="visa-logo"
+                                    width={60}
+                                    height={60}
+                                />
+                                <Image
+                                    src={"/images/nfc.svg"}
+                                    alt="nfc"
+                                    width={24}
+                                    height={24}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }
