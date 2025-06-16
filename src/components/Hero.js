@@ -1,8 +1,11 @@
 import Image from "next/image";
+import EmailForm from "@/components/emailForm";
 
 export default function HeroSection() {
+    // onSubmit 핸들러 함수 정의
+
     return (
-        <section className="flex gap-36 mx-12 justify-center items-center">
+        <section className="flex gap-36 justify-center items-center min-h-screen">
             <div className="max-w-xl">
                 <div className="text-7xl text-secondary mb-4 leading-24">
                     <span className="font-semibold whitespace-nowrap">
@@ -16,26 +19,7 @@ export default function HeroSection() {
                     간편한 인보이스, 강력한 연동, 현금흐름 관리 도구로
                     소상공인을 지원합니다
                 </div>
-                <div className="relative mt-8 max-w-md w-full">
-                    <input
-                        type="email"
-                        placeholder="비즈니스 이메일을 입력하세요"
-                        className="border border-gray-400 rounded-lg p-4 w-full pr-28 text-sm"
-                    />
-                    <button
-                        className="absolute top-0 right-0 bg-primary text-white text-sm font-bold rounded-lg px-4 py-2 hover:bg-secondary z-10"
-                        style={{ height: "calc(100%)" }}
-                    >
-                        시작하기
-                        <Image
-                            src={"/images/arrow.png"}
-                            alt="arrow"
-                            width={24}
-                            height={24}
-                            className="inline-block ml-2"
-                        />
-                    </button>
-                </div>
+                <EmailForm />
                 <div className="mt-8 flex gap-8">
                     <Image
                         src={"/images/Klarna.svg"}
@@ -70,9 +54,9 @@ export default function HeroSection() {
                                 className="rounded-xl"
                             />
                             <div className="gap-1 flex flex-col">
-                                <div className="font-bold">Dipa Inhouse</div>
+                                <div className="font-bold">Zini Inhouse</div>
                                 <div className="text-gray-500 text-sm">
-                                    dipainhouse@gmail.com
+                                    woozin@gmail.com
                                 </div>
                             </div>
                         </div>

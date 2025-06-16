@@ -88,7 +88,7 @@ export default function Footer() {
             </div>
 
             {/* Divider & Copyright */}
-            <div className="border-t mt-12 pt-6 text-center text-primary">
+            <div className="border-t border-gray-300 mt-12 pt-6 text-center text-secondary">
                 © Finpay 2025. All Rights Reserved.
             </div>
         </footer>

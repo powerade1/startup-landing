@@ -1,8 +1,8 @@
 export default function ImpactSection() {
   return (
     <section className="py-40 px-4 bg-white w-full text-center">
-      <div className="max-w-4xl mx-auto">
-        <p className=" text-primary font-semibold mb-2">우리의 사명</p>
+      <div className="max-w-6xl mx-auto">
+        <p className=" text-primary font-semibold mb-2">OUR MISSION</p>
         <h2 className="text-3xl sm:text-4xl font-semibold mb-4">
           우리는 수많은 혁신 기업들의 <br className="sm:hidden" /> 성장을 도왔습니다
         </h2>

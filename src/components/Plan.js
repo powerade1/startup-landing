@@ -1,7 +1,7 @@
 export default function PlanSection() {
     return (
-        <section className="pt-20 px-4 bg-white w-full">
-            <div className="max-w-5xl mx-auto">
+        <section className="pt-20 px-4 bg-white w-full" id="pricing">
+            <div className="max-w-6xl mx-auto">
                 <p className="text-gray-500 mb-6 tracking-widest text-center text-lg">
                     플랜 선택
                 </p>

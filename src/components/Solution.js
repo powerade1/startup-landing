@@ -1,9 +1,16 @@
 export default function SolutionSection() {
     return (
-        <section className="bg-secondary text-white py-40 px-4 w-full">
+        <section
+            id="learn"
+            className="text-white py-40 px-4 w-full"
+            style={{
+                background:
+                    "linear-gradient(90deg,rgba(2, 19, 33, 1) 0%, rgba(2, 51, 71, 1) 50%, rgba(2, 19, 33, 1) 100%)",
+            }}
+        >
             <div className="max-w-6xl mx-auto">
                 <p className="text-primary font-semibold mb-2">STEP</p>
-                <h2 className="text-3xl sm:text-4xl font-semibold mb-10 leading-16">
+                <h2 className="text-3xl sm:text-4xl font-semibold mb-10 leading-14">
                     계좌 하나로 수익까지, <br /> 지금 시작하세요
                 </h2>
 

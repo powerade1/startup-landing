@@ -3,7 +3,7 @@ import Chart from "@/components/chart.js";
 
 export default function SocialProofSection() {
     return (
-        <section className="w-full px-6 pt-32 pb-40 bg-white">
+        <section className="w-full px-6 pt-32 pb-40 bg-white" id="customers">
             <div className="max-w-6xl mx-auto text-center mb-16">
                 <p className=" text-primary font-semibold tracking-wide mb-8">
                     WHY US
